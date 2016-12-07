@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+    function get(){
+        var form = document.getElementById("one");
+        var content = form.elements(0).value;
+        alert(content);
+
+//        var pass = document.getElementById("username").value;
+//        alert('pass:'+ pass);
+//        var ipv6 = document.getElementById("ipv6").value;
+//        alert(ipv6)
+    }
+</script>
+</head>
+<body>
+
+
+
+
+<form id="one" method="post" name="one1">
+    user:<input type="text" id="username" name="user" value=""><br>
+    password:<input type="text" id="password" name="pawd" value=""><br>
+    ipv6:<input type="text" id="ipv6" name="ipv6" value=""><br>
+    vlan:<input type="text" id="vlan" name="vlan" value=""><br>
+    <input type="button" value="button" onclick="get()">
+</form>
+
+</body>
+</html>
