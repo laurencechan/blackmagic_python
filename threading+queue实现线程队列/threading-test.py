@@ -19,7 +19,7 @@ def main():
     for t in threads:
         # t.join()
         t.start()
-    for t in threads:
+    # for t in threads:
         t.join()
 
     print "End Main threading"
